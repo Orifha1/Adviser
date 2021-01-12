@@ -1,20 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<ion-header [translucent]="true" >
+  <ion-toolbar color="primary">
+      <ion-title>
+        Advicer
+      </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ 
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Ready to Advice you 😀</h1>
+    <ion-card>
+      <ion-text color="dark">
+        {{advice.advice}}
+      </ion-text>
+    </ion-card>
+    <div id="adviceButtonContainer">
+      <ion-button color="success" id="adviceButton" (click)="adviceBtnClicked()">
+        Press me for advice
+      </ion-button>
+    </div>
   </div>
+  
 </ion-content>
